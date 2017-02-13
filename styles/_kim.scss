@@ -1,0 +1,55 @@
+body{
+	background: pink;
+}
+
+.banner{
+	width: 100%;	
+	background: purple;
+	height: 50px;
+
+	.heart-container{
+    	text-align: center;
+    	display: block;
+    	margin: 0 auto;
+
+			.heart-svg {
+				height: 25px;
+				padding: 12px 5px;
+			}
+	}
+}
+
+.kim{
+
+	.title{
+		text-align: center;
+		color: #de1203;
+		font-weight: 300;
+		font-size: 28px;
+		line-height: 40px;
+		margin-bottom: 50px;
+	}
+
+	.content{
+
+		p{
+			font-size: 16px;
+			line-height: 32px;
+			color: #666;
+		}
+	}
+
+	.img-container{
+		max-width: 400px;
+		min-width: 280px;
+		height: 100%;
+		padding: 20px;
+		margin: 0 auto;
+		display: block;
+
+		.img-responsive{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

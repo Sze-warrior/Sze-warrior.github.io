@@ -1,39 +1,67 @@
 <!DOCTYPE html>
-    <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+<html lang="eng">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Responsive mobile first website I made in my spare time.">
+    <meta name="description" content="A mobile first grid layout with HTML and CSS/SASS. Built by Michael Szeto: A UI/UX Designer who enjoys F.E Development."> 
 
-    <title>How HTML and CSS can help your career</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+	<body>	
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="styles/styles.css" rel="stylesheet">
+	<div class="banner">
+		<div class="heart-container">
+			<img class="heart-svg" src="imgs/heart.svg">		
+			<img class="heart-svg" src="imgs/heart.svg">		
+			<img class="heart-svg" src="imgs/heart.svg">		
+		</div>
+	</div>
 
-  </head>
+	<main class="container kim">		
 
-  <body class="sot-talk">
+		<section class="row">
+		   <div class="col-12">
+		   </div>
 
-      <div class="container-full-height primary-blue">
-          <div class="container centered">
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <h1 class="lead">Hello and welcome!</h1>
-                <h3>How knowing HTML and CSS can help you in your career</h3>
-              </div>
+		   <div class="col-12">
+		     <h1 class="title">Happy valentines day<br> Kimmy Chew</h1>	
 
-              <div class="col-md-12 text-center">
-              <a href="html/117-spots.html">
-                <button type="button"  class="btn btn-success btn-lg">Next Slide</button>
-              </a>  
-              </div>
-            </div>
-          </div>
-      </div>
-    <!-- /container -->
+		     <div class="content">
+		     	<p>You're a sweet, caring, generous, mischevious (yes that's right =P ) young woman who I have found I really enjoy being with these last few months.</p>
 
-  </body>
-  </html>
+		     	<p>Whether we talk with a blur of texts, a long soothing phone call, drawing you on a page ;P , sharing an ice cream together or seeing you start a job that you deserve has all been special and memorable to witness in my eyes.</p>
+
+		     	<p>I'm so sorry I can't see you now and tell you all this in person, but I hope you know I think you're special and amazing to be around. =)</p>
+
+		     	<p>Call you soon.XX Michael.</p>
+		     </div>	
+		   </div>
+
+		   <div class="col-6">
+		   		<div class="img-container">
+		     		<img class="img-responsive" src="imgs/kimmy-portait.png">
+		     	</div>
+		   </div>
+
+		   <div class="col-6">
+		   		<div class="img-container">
+		     		<img class="img-responsive" src="imgs/kimmy-portrait-2.png">
+		     	</div>
+		   </div>		   
+
+		</section>										
+	</main>
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+   
+   <script> 
+   	if(typeof jquery == 'undefined'){
+   		document.write('<script src="scripts/jquery.min.js">\x3C/script>');
+   	} //The \x3/ is used to tell the browser that there is a script tag inside the document.write and is not just a string. 
+   </script>
+   
+   <script src="scripts/header.js"></script>
+   </body>
+</html>

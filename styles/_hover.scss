@@ -1,9 +1,0 @@
-.slide-container { width: 100%; border: 1px solid black; }
-
-.background-slide-in { position: relative; color: black; }
-
-.background-slide-in:after { display: block; position: absolute; top: 0; width: 0; height: 100%; background-color: #cf150a; content: ""; -webkit-transition: width, 0.4s ease-in-out; transition: width, 0.4s ease-in-out; z-index: -2; }
-
-.background-slide-in:hover { color: black; cursor: pointer; }
-
-.background-slide-in:hover:after { width: 100%; }
