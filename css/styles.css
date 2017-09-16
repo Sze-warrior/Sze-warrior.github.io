@@ -157,7 +157,8 @@ input {
 @media screen and (max-width: 767px) {
   .card-container {
     max-width: 80%;
-    padding: 40px 20px; } }
+    padding: 40px 20px;
+    margin-bottom: 100px; } }
 
 .spinner-container {
   width: 26px;
