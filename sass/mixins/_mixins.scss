@@ -1,0 +1,48 @@
+//The file for future mixins
+@import "transition";
+@import "rounded";
+@import "rotate";
+
+// generic transform
+@mixin transform($transforms) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+
+//Drop shadow
+@mixin box-shadow($horizontal: 0px, $vertical: 1px, $blur: 2px, $color: #CCC) {
+  -webkit-box-shadow: $horizontal $vertical $blur $color;
+  -moz-box-shadow: $horizontal $vertical $blur $color;
+  box-shadow: $horizontal $vertical $blur $color;
+}
+
+//placeholder empty mixin
+@mixin placeholder-text($placeholder-opacity: transparent){
+
+        &::-webkit-input-placeholder {
+            color: $placeholder-opacity;
+        }
+
+        /* Firefox < 19 */
+        &:-moz-placeholder {
+            color: $placeholder-opacity;
+        }
+
+        /* Firefox > 19 */
+        &::-moz-placeholder {
+            color: $placeholder-opacity;
+        }
+
+        /* Internet Explorer 10 */
+        &:-ms-input-placeholder {
+            color: $placeholder-opacity;
+        }
+}

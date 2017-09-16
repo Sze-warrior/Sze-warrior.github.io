@@ -1,0 +1,41 @@
+@import "../variables";
+@import "../mixins/mixins";
+
+.form-container{
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+
+    &:first-child{
+        padding-bottom: 18px;
+    }
+}
+
+.label{
+    display: block;
+    color: $font-default-grey;
+    font-size: 13px;
+    @include transition(0.3s);
+    font-weight: 600;
+
+    &.email, &.password{
+        top: 20px;
+        opacity: 0;
+        position: absolute;
+    }
+}
+
+.sign-up{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 25px;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+
+    &:hover, &:focus{
+        text-decoration: underline;
+    }
+}
