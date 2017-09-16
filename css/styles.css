@@ -107,7 +107,8 @@ input {
   background-repeat: no-repeat; }
 
 @media screen and (max-width: 767px) {
-  margin-top: 50px; }
+  .container {
+    margin-top: 50px; } }
 
 .form-container {
   padding-top: 20px;

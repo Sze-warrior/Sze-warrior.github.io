@@ -94,5 +94,8 @@ input{
 }
 
 @media screen and (max-width:$mobile){
-    margin-top: 50px;
+
+    .container{
+        margin-top: 50px;
+    }
 }
