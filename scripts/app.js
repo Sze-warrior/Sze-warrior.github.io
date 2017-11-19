@@ -39,11 +39,11 @@ new Vue({
 		      || this.charactersRemaining < 0;
 		 },
 
-		 charactersUnder20: function(){
+		 charactersUnder70: function(){
 		  return this.charactersRemaining <= 20; 
 		 },
 
-		 charactersUnder10: function(){
+		 charactersUnder20: function(){
 		  return this.charactersRemaining <= 10; 
 		 },
 

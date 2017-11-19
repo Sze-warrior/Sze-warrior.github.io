@@ -1,20 +1,20 @@
 @import "mixins/mixins.scss";
 
 .btn{
-    border: 2px solid $color-green-mint; 
+    border: 2px solid $color-twitter-blue; 
 	width: $btn-width;
 	height: $btn-height;
 	font-size: $font-size-base;
     text-align: center;
     line-height: $line-height-btn;
-    background-color: $color-green-mint;
+    background-color: $color-twitter-blue;
     color: white;
     @include border-radius();
     @include transition(); 
 
     &:hover{
-        background-color: darken($color-green-mint, 10%);        
-        border: 2px solid darken($color-green-mint, 10%); 
+        background-color: darken($color-twitter-blue, 10%);        
+        border: 2px solid darken($color-twitter-blue, 10%); 
         cursor: pointer;
         @include transition();
     } 
@@ -36,12 +36,12 @@
 
 .btn-ghost{
     background-color: white;
-    color: $color-green-mint; 
-    border: 2px solid $color-green-mint; 
+    color: $color-twitter-blue; 
+    border: 2px solid $color-twitter-blue; 
 
     &:hover{
         color: white; 
-        border: 2px solid darken($color-green-mint, 10%); 
+        border: 2px solid darken($color-twitter-blue, 10%); 
     }
 }
 

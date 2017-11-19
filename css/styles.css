@@ -116,13 +116,13 @@ main {
   margin: 0 auto; }
 
 .btn {
-  border: 2px solid #2ab754;
+  border: 2px solid #00aced;
   width: 200px;
   height: 48px;
   font-size: 16px;
   text-align: center;
   line-height: 48px;
-  background-color: #2ab754;
+  background-color: #00aced;
   color: white;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -133,8 +133,8 @@ main {
   -webkit-transition: 0.3s;
   transition: 0.3s; }
   .btn:hover {
-    background-color: #208e41;
-    border: 2px solid #208e41;
+    background-color: #0087ba;
+    border: 2px solid #0087ba;
     cursor: pointer;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
@@ -150,11 +150,11 @@ main {
 
 .btn-ghost {
   background-color: white;
-  color: #2ab754;
-  border: 2px solid #2ab754; }
+  color: #00aced;
+  border: 2px solid #00aced; }
   .btn-ghost:hover {
     color: white;
-    border: 2px solid #208e41; }
+    border: 2px solid #0087ba; }
 
 button[disabled] {
   cursor: not-allowed;

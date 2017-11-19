@@ -26,7 +26,7 @@
                       <input class="btn-file-upload" multiple @change="handlePhotoUpload" ref="photoUpload" type="file">
                     </div>
 
-                    <div class="characters-left" v-bind:class="{'orange':charactersUnder20, 'red':charactersUnder10}"> 
+                    <div class="characters-left" v-bind:class="{'orange':charactersUnder70, 'red':charactersUnder20}"> 
                       <b>Characters remaining:</b> 
                       <span class="text-nowrap">{{ charactersRemaining }} / 140</span>
                     </div>
