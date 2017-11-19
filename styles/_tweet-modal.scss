@@ -28,10 +28,11 @@
 	    padding: 12px;
 	    border: 1px solid $font-base-gray-light;
 		@include transition(0.3s);
+		@include border-radius(6px);
 
 	    &:focus {
-		    border: 1px solid $font-base-gray-light;
-			@include transition(0.3s);	    	
+		    border: 1px solid darken($color-twitter-blue, 10%);
+			@include transition(0.3s);	 
 	    }
 	}
 
