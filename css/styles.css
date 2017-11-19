@@ -190,29 +190,13 @@ button[disabled] {
     font-size: 16px;
     padding: 12px;
     border: 1px solid #4d4d4d; }
-  .twiter-modal-component .options-container {
+  .twiter-modal-component .characters-left {
+    text-align: right;
+    text-align-last: right;
     padding-bottom: 20px;
-    display: inline;
-    display: inline-block;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    zoom: 1;
-    text-align: justify;
-    -moz-text-align-last: justify;
-    text-align-last: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between; }
-    .twiter-modal-component .options-container .file-upload {
-      width: 50%;
-      text-align: left; }
-    .twiter-modal-component .options-container .btn-file-upload {
-      width: 100%;
-      padding-top: 4px; }
-    .twiter-modal-component .options-container .characters-left {
-      text-align: right;
-      text-align-last: right; }
+    padding-right: 10px; }
   @media screen and (max-width: 767px) {
     .twiter-modal-component .tweet-area {
-      width: 90%; } }
+      width: 90%; }
+    .twiter-modal-component .characters-left {
+      padding-right: 0; } }

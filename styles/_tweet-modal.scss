@@ -29,30 +29,20 @@
 	    border: 1px solid $font-base-gray-light;
 	}
 
-	.options-container{
-		padding-bottom: 20px;
-		@include display-flex();
-		@include justify-content-space-between();
-
-		.file-upload{
-			width: 50%;
-			text-align: left;
-		}
-
-		.btn-file-upload{
-			width: 100%;
-			padding-top: 4px;
-		}
-
-		.characters-left{
-			text-align: right;
-			text-align-last: right;			
-		}
+	.characters-left{
+		text-align: right;
+		text-align-last: right;		
+	    padding-bottom: 20px;
+    	padding-right: 10px;			
 	}
 
 	@media screen and (max-width: $mobile){
 		.tweet-area{
 			width: 90%;
+		}
+
+		.characters-left{
+			padding-right: 0;
 		}
 	}
 }
