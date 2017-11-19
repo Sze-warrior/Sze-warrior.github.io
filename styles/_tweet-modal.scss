@@ -1,0 +1,58 @@
+.twiter-modal-component{
+	@include transition(0.5s);
+
+	.characters-left{
+		color: $font-base-gray;
+		text-align: right;
+		font-size: $font-size-label;
+		@include transition(0.5s);
+
+		&.orange{
+			color: orange;				
+		}
+
+		&.red{
+			color: red;
+		}
+
+	}
+
+	.tweet-area{
+		resize: none;
+		width: 93%;
+	    height: 100px;
+	    margin: 0 auto 10px;
+	    display: block;
+	    outline: none;
+	    font-size: $font-size-base;
+	    padding: 12px;
+	    border: 1px solid $font-base-gray-light;
+	}
+
+	.options-container{
+		padding-bottom: 20px;
+		@include display-flex();
+		@include justify-content-space-between();
+
+		.file-upload{
+			width: 50%;
+			text-align: left;
+		}
+
+		.btn-file-upload{
+			width: 100%;
+			padding-top: 4px;
+		}
+
+		.characters-left{
+			text-align: right;
+			text-align-last: right;			
+		}
+	}
+
+	@media screen and (max-width: $mobile){
+		.tweet-area{
+			width: 90%;
+		}
+	}
+}

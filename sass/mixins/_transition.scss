@@ -1,7 +1,0 @@
-//Transition mixin
-@mixin transition($duration) {
-    -moz-transition:    $duration;
-    -o-transition:      $duration;
-    -webkit-transition: $duration;
-    transition:         $duration;
-}

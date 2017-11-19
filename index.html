@@ -3,45 +3,52 @@
 <html lang="eng">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content= "Michael Szeto.">
-    <meta name="description" content="A CSS login page example with a logging in UI animation button by Michael Szeto.">
+    <meta name="author" content="Responsive mobile first website I made in my spare time.">
+    <meta name="description" content="A lightbox modal built by Michael Szeto: A UI/UX Designer who enjoys F.E Development."> 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-	<body class="body-bg">
+    <body>  
+      <main>
 
-	<div class="container">
-		<div class="row">
-		   
-		   <div class="card-container card-login">
-		    	<h1>Login</h1>
+        <div class="twiter-modal-component">
+          
+          <div class="modal-container" v-bind:class="{ visible: isModalActive }">
+              <div class="modal-content" v-bind:class="{ visible: isModalActive }">
 
-		    	<form>
-			    	<div class="form-container">
-			    		<input type="text" id="email" placeholder="Email Address">
-			    		<span class="label email">Email Address:</span>
-			    	</div>
+                  <h3 class="heading">What's on your mind to tweet?:</h3>
+                  
+                  <textarea placeholder="Tweet something to your followers" v-model="tweet" class="tweet-area"></textarea>
 
-			    	<div class="form-container">
-			    		<input type="password" id="password" placeholder="Password">
-			    		<span class="label password">Password:</span>
-			    	</div>
+                  <div class="options-container">
+                    
+                    <div class="file-upload">
+                      <label>Add file to tweet:</label>
+                      <input class="btn-file-upload" multiple @change="handlePhotoUpload" ref="photoUpload" type="file">
+                    </div>
 
-			    	<div class="btn btn-spinner">
-			    		<div class="spinner-container hidden">
-			    			<div class="spinner gradient-border">
-			    				<div class="gradient-inner-bg"></div>
-			    			</div>
-			    		</div>
-			    		<span class="btn-description">Log in</span>
-			    	</div>
+                    <div class="characters-left" v-bind:class="{'orange':charactersUnder20, 'red':charactersUnder10}"> 
+                      <b>Characters remaining:</b> 
+                      <span class="text-nowrap">{{ charactersRemaining }} / 140</span>
+                    </div>
+                  </div>
 
-			    	<a class="sign-up">Don't have an account? Sign up.</a>
-		    	</form>
-		   </div>
+                  <div class="btn-container">
+                    <div @click="toggleModal" class="btn btn-ghost btn-escape">Cancel</div>
+                    <button v-bind:disabled="tweetIsOutOfRange" class="btn btn-tweet">Tweet</button> 
+                  </div>
 
-		</div>
-	</div>
+              </div>
+          </div>
 
-	<script src="js/scripts.js"></script>
-   </body>
+          <div class="container">
+              <h1 class="intro">Click the button to view the lightbox modal.</h1>
+              <div @click="toggleModal" class="btn btn-modal center">Begin tweet</div>
+          </div>
+      </div>
+
+    </main>
+  </body>
+  
+  <script src="scripts/vue.min.js"></script>
+
 </html>

@@ -1,0 +1,56 @@
+@import "mixins/mixins.scss";
+
+.btn{
+    border: 2px solid $color-green-mint; 
+	width: $btn-width;
+	height: $btn-height;
+	font-size: $font-size-base;
+    text-align: center;
+    line-height: $line-height-btn;
+    background-color: $color-green-mint;
+    color: white;
+    @include border-radius();
+    @include transition(); 
+
+    &:hover{
+        background-color: darken($color-green-mint, 10%);        
+        border: 2px solid darken($color-green-mint, 10%); 
+        cursor: pointer;
+        @include transition();
+    } 
+
+    &.btn-tweet{
+        line-height: 24px;
+    }
+
+    &.btn-escape{
+        margin-right: 10px;
+    }
+
+    &.btn-modal{
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+.btn-ghost{
+    background-color: white;
+    color: $color-green-mint; 
+    border: 2px solid $color-green-mint; 
+
+    &:hover{
+        color: white; 
+        border: 2px solid darken($color-green-mint, 10%); 
+    }
+}
+
+button[disabled] {
+  cursor: not-allowed;
+  opacity: .15;
+  line-height: 24px;
+
+  &:hover{
+      cursor: not-allowed;
+  }
+}
