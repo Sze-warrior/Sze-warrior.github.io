@@ -40,11 +40,11 @@ new Vue({
 		 },
 
 		 charactersUnder70: function(){
-		  return this.charactersRemaining <= 20; 
+		  return this.charactersRemaining <= 70; 
 		 },
 
 		 charactersUnder20: function(){
-		  return this.charactersRemaining <= 10; 
+		  return this.charactersRemaining <= 20; 
 		 },
 
 		 photoHasBeenUploaded: function() {
