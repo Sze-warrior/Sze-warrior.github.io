@@ -164,18 +164,18 @@ button[disabled] {
     cursor: not-allowed; }
 
 .twiter-modal-component {
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s; }
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
   .twiter-modal-component .characters-left {
     color: #4d4d4d;
     text-align: right;
     font-size: 12px;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    transition: 0.5s; }
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
     .twiter-modal-component .characters-left.orange {
       color: orange; }
     .twiter-modal-component .characters-left.red {
@@ -189,7 +189,17 @@ button[disabled] {
     outline: none;
     font-size: 16px;
     padding: 12px;
-    border: 1px solid #4d4d4d; }
+    border: 1px solid #4d4d4d;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .twiter-modal-component .tweet-area:focus {
+      border: 1px solid #4d4d4d;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
   .twiter-modal-component .characters-left {
     text-align: right;
     text-align-last: right;

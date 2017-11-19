@@ -1,11 +1,11 @@
 .twiter-modal-component{
-	@include transition(0.5s);
+	@include transition(0.3s);
 
 	.characters-left{
 		color: $font-base-gray;
 		text-align: right;
 		font-size: $font-size-label;
-		@include transition(0.5s);
+		@include transition(0.3s);
 
 		&.orange{
 			color: orange;				
@@ -27,6 +27,12 @@
 	    font-size: $font-size-base;
 	    padding: 12px;
 	    border: 1px solid $font-base-gray-light;
+		@include transition(0.3s);
+
+	    &:focus {
+		    border: 1px solid $font-base-gray-light;
+			@include transition(0.3s);	    	
+	    }
 	}
 
 	.characters-left{
