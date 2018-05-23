@@ -31,3 +31,4 @@ Adding arrows to accordian and dropdown in the header
 Fix search form placement on mobile 
 Minify my CSS and JavaScript with Gulp.js
 UI animations for slidetoggle
+browser compatability testing
