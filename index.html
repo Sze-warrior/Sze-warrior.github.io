@@ -1,47 +1,172 @@
 <!DOCTYPE html>
 <head>
+
 <html lang="eng">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Responsive mobile first website I made in my spare time.">
-    <meta name="description" content="A lightbox modal built by Michael Szeto: A UI/UX Designer who enjoys F.E Development."> 
+    <meta name="author" content="Michael Szeto">
+    <meta name="description" content="Website task developed by Michael Szeto.">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
+
     <body>  
       <main>
 
-        <div class="twiter-modal-component">
-          
-          <div class="modal-container" v-bind:class="{ visible: isModalActive }">
-              <div class="modal-content" v-bind:class="{ visible: isModalActive }">
+        <header class="header-container">  
+          <div class="header-row">            
+            <div class="hamburger-container">
+              <div class="hamburger-bar hamburger-bar-1"></div>
+              <div class="hamburger-bar hamburger-bar-2"></div>
+              <div class="hamburger-bar hamburger-bar-3"></div>
+            </div>
 
-                  <h3 class="heading">What's on your mind to tweet?:</h3>
-                  
-                  <textarea placeholder="Tweet something to your followers" v-model="tweet" class="tweet-area"></textarea>
+            <img class="header-logo" src="images/dominion-software-logo.png">
 
-                  <div class="characters-left" v-bind:class="{'orange':charactersUnder70, 'red':charactersUnder20}"> 
-                    <b>Characters remaining:</b> 
-                    <span class="text-nowrap">{{ charactersRemaining }} / 140</span>
-                  </div>
+            <nav class="nav-container">
+              <ul class="nav-list">
+                <li class="nav-list-item">Home</li>
+                <li class="nav-list-item">About</li>
+                <li class="nav-list-item header-dropdown">Products
+                  <ul class="dropdown-list">
+                    <li class="dropdown-list-item">Product 1</li>
+                    <li class="dropdown-list-item">Product 2</li>
+                    <li class="dropdown-list-item">Product 3</li>
+                    <li class="dropdown-list-item">Product 4</li>
+                  </ul>
+                </li>
+                <li class="nav-list-item">Contact</li>
+              </ul>
+            </nav>
 
-                  <div class="btn-container">
-                    <div @click="toggleModal" class="btn btn-ghost btn-escape">Cancel</div>
-                    <button v-bind:disabled="tweetIsOutOfRange" class="btn btn-tweet">Tweet</button> 
-                  </div>
-
+            <a href="#form">
+              <div class="search-icon-container">
+                <div class="circle"></div>
+                <div class="bar"></div>
               </div>
+            </a>
+          </div>
+        </header>
+
+        <div class="hero-banner hero-parrallax">
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container">       
+          <div class="row">
+            <h1 class="text-centered">Welcome</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ex ex, euismod ac accumsan nec, dapibus commodo turpis. Sed ut varius justo, at pretium nibh. Praesent sed nisl eget lacus aliquam vehicula nec sit amet felis. Ut lacinia, tellus sed tempor porttitor, leo nisi pretium sapien, a ultricies justo tortor vitae dui. Quisque viverra mattis suscipit.</p>  
+            <a name="#form"></a>
+
+            <form>
+            <input class="form-default" type="text" name="search" placeholder="Search">
+            <button class="btn btn-center">Search</button>  
+            </form>          
           </div>
 
-          <div class="container">
-              <h1 class="intro">Click the button to view the lightbox modal.</h1>
-              <div @click="toggleModal" class="btn btn-modal center">Begin tweet</div>
+          <div class="divider"></div>
+
+          <div class="row">            
+            <div class="card-container"> 
+              <div class="card-item">
+                <img class="img-responsive" src="images/card-img.jpg">
+                <div class="card-content">
+                  <div class="card-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>                     
+                  <div class="btn btn-card">
+                    Learn more
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-item">
+                <img class="img-responsive" src="images/card-img.jpg">
+                <div class="card-content">
+                  <div class="card-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>                     
+                  <div class="btn btn-card">
+                    Learn more
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-item">
+                <img class="img-responsive" src="images/card-img.jpg">
+                <div class="card-content">
+                  <div class="card-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>                     
+                  <div class="btn btn-card">
+                    Learn more
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-      </div>
 
-    </main>
-  </body>
-  
-  <script src="scripts/vue.min.js"></script>
-  <script src="scripts/app.js"></script>
+        </div>
 
+        <div class="banner-container">
+          
+          <div class="banner-split">
+            <img class="img-responsive" src="images/banner-img.jpg">
+          </div>
+          <div class="banner-split">
+            <img class="img-responsive" src="images/banner-img-2.jpg">
+          </div>
+
+        </div>
+
+        <footer class="footer-container">
+          <div class="footer-row">
+            <div class="footer-options-container">
+              <h3 class="footer-list-title accordian-title">Home:</h3>
+              <ul class="footer-options-list">
+                <li>Menu Item 1</li>
+                <li>Menu Item 2</li>
+                <li>Menu Item 3</li>
+                <li>Menu Item 4</li>
+                <li>Menu Item 5</li>
+              </ul>
+            </div>
+
+            <div class="footer-options-container">
+              <h3 class="footer-list-title accordian-title">Products:</h3>
+              <ul class="footer-options-list">
+                <li>Menu Item 1</li>
+                <li>Menu Item 2</li>
+                <li>Menu Item 3</li>
+                <li>Menu Item 4</li>
+              </ul>
+            </div>
+
+            <div class="footer-options-container">
+              <h3 class="footer-list-title accordian-title">Services:</h3>
+              <ul class="footer-options-list">
+                <li>Menu Item 1</li>
+                <li>Menu Item 2</li>
+                <li>Menu Item 3</li>
+                <li>Menu Item 4</li>
+              </ul>
+            </div>
+
+            <div class="footer-options-container">
+              <h3 class="footer-list-title accordian-title">Help:</h3>
+              <ul class="footer-options-list">
+                <li>Item1</li>
+                <li>Item2</li>
+                <li>Item3</li>
+              </ul>
+            </div>          
+          </div>
+        </footer>
+
+      </main>
+
+      <script src="scripts/hamburger.js"></script>
+      <script src="scripts/header.js"></script>
+      <script src="scripts/accordian.js"></script>
+
+   </body>
 </html>
