@@ -33,6 +33,23 @@ p {
   margin-bottom: 20px;
   margin-top: 0; }
 
+.divider {
+  background-color: #757575;
+  height: 1px;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
+.img-responsive {
+  width: 100%; }
+
+@media screen and (max-width: 768px) {
+  .hidden-mobile {
+    display: none; } }
+
+.text-centered {
+  text-align: center; }
+
 .hamburger-container {
   width: 50px;
   position: relative;
