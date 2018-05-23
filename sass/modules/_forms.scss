@@ -1,0 +1,24 @@
+.form-default{
+	width: 50%;
+    height: $form-height;
+    border: 1px solid $brand-color;    
+    margin: 0 auto;
+    display: block;
+    font-size: $form-font-size;
+    color: black;
+    transition: all linear 0.2s;
+    box-shadow: none;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    &:focus, &:active{
+    	border-color: lighten($brand-color, 15%);
+    	outline: none;
+    	transition: all linear 0.2s;
+    	box-shadow: 0px 1px 7px $color-grey-light;
+    }
+
+    @media screen and (max-width: $media-med){
+    	width: 90%;
+    }
+}

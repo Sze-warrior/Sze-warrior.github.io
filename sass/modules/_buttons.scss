@@ -1,0 +1,33 @@
+.btn{
+    background-color: $brand-color;
+	border-radius: $btn-radius;
+    text-align: center;
+    line-height: $btn-line-height;
+    height: $btn-card-height;
+    width: $btn-card-width;
+    color: white;
+    transition: background-color linear 0.2s;     
+    border: none;
+    font-size: $p-font-size;
+
+    &:hover{
+        background-color: darken($brand-color, 10%); 
+        cursor: pointer; 
+        transition: background-color linear 0.2s;     
+    }
+}
+
+.btn-center{
+    margin: 0 auto;
+    display: block;
+}
+
+.btn-card{
+    width: calc(100% - 40px);
+    padding-left: $grid-gutter-width/8;
+    padding-right: $grid-gutter-width/8;
+
+    @media screen and (max-width: $media-sml){
+		width: calc(100% - 10px);
+	}
+}

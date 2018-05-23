@@ -1,0 +1,25 @@
+.search-icon-container{
+	display: none;
+    height: 40px;
+    padding-top: 14px;
+    margin-right: $grid-gutter-width/4;
+    transform: rotate(-45deg);
+
+	.circle{
+	    width: 18px;
+	    height: 18px;
+	    border: 2px solid white;
+	    border-radius: 50%;
+	}
+
+	.bar{
+		height: 15px;
+		width: 2px;
+	    background-color: white;
+	    margin: 0 auto;
+	}
+
+	@media screen and (max-width: $media-med){
+		display: block;
+	}
+}

@@ -1,0 +1,16 @@
+//Base styles
+@import "base/base";
+@import "base/typography";
+//Component styles
+@import "components/hamburger";
+@import "components/hero";
+@import "components/cards";
+@import "components/search-icon";
+
+//Modules
+@import "modules/header";
+@import "modules/buttons";
+@import "modules/banner";
+@import "modules/footer";
+@import "modules/forms";
+

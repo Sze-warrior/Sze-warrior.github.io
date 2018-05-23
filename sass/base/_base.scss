@@ -1,0 +1,25 @@
+@import "variables";
+
+html, body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	font-family: "Helvetica Neue", "Arial", "Times new roman";
+}
+
+.container{
+	max-width: $container-width;
+	padding-top: 60px;
+    display: block;
+    margin: 0 auto;	
+}
+
+.row{
+	padding-left: 0;
+	padding-right: 0;
+
+	@media screen and (max-width: $media-med){
+		padding-left: $grid-gutter-width/2;
+		padding-right: $grid-gutter-width/2;
+	}
+}

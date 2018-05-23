@@ -1,0 +1,15 @@
+.banner-container{
+	display: flex;
+	flex-direction: row;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 60px;
+
+	@media screen and(max-width: $media-sml){
+		flex-direction: column;
+	}
+}
+
+.banner-split{
+	width: 100%;
+}
