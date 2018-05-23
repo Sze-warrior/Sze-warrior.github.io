@@ -29,4 +29,5 @@ If I had a bit more time, I would of completed the following extra tasks:
 Building mobile slider/carousel
 Adding arrows to accordian and dropdown in the header
 Fix search form placement on mobile 
+Minify my CSS and JavaScript with Gulp.js
 UI animations for slidetoggle
