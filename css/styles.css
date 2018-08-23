@@ -285,29 +285,6 @@ a {
        -moz-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0; }
-  @media screen and (max-width: 576px) {
-    .hero-btn-row {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-         -moz-box-orient: vertical;
-         -moz-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .hero-btn-row .button-primary:first-child {
-        margin-right: 0;
-        -webkit-box-ordinal-group: 3;
-        -webkit-order: 2;
-           -moz-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2; }
-      .hero-btn-row .button--ghost-white {
-        -webkit-box-ordinal-group: 2;
-        -webkit-order: 1;
-           -moz-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1;
-        margin-top: 20px; } }
 
 footer {
   height: 100%;
@@ -441,6 +418,14 @@ footer {
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid rgba(255, 255, 255, 0.5);
     color: black; }
+  .button--ghost-white:focus {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
 
 .button--center {
   display: block;
@@ -448,7 +433,7 @@ footer {
 
 @media screen and (max-width: 576px) {
   .button--mobile {
-    width: 100%; } }
+    width: 50%; } }
 
 .split-img-container {
   width: 100%;
